@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1><span>YAY! It's BOGO</span></h1>
+
+      <div class="box" data-box="1">
+        <label>
+          <input type="radio" name="plan" />
+          <div class="box-content">
+            <div>
+              <strong>1 Unit</strong><br />
+              <span class="badge">10% Off</span><br />
+              <span class="desc">Standard Price</span>
+            </div>
+            <div>
+              <div class="price">
+                $10.00 USD <del><br />$24.00 USD</del>
+              </div>
+            </div>
+          </div>
+        </label>
+        <div class="dropdowns">
+          <div class="dropdown-header">
+            <span></span>
+            <span>Size</span>
+            <span>Colour</span>
+          </div>
+          <div class="dropdown-row">
+            <span class="index">#1</span>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+          <div class="dropdown-row">
+            <span class="index">#2</span>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Colour</option>
+              <option>Black</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="box active" data-box="2">
+        <label>
+          <input type="radio" name="plan" checked />
+          <div class="box-content">
+            <div>
+              <strong>2 Unit</strong><br />
+              <span class="badge">20% Off</span>
+            </div>
+            <div>
+              <div class="price">
+                $18.00 USD <del><br />$24.00 USD</del>
+              </div>
+            </div>
+            <div class="popular">MOST POPULAR</div>
+          </div>
+        </label>
+        <div class="dropdowns">
+          <div class="dropdown-header">
+            <span></span>
+            <span>Size</span>
+            <span>Colour</span>
+          </div>
+          <div class="dropdown-row">
+            <span class="index">#1</span>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+          <div class="dropdown-row">
+            <span class="index">#2</span>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Colour</option>
+              <option>Black</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" data-box="3">
+        <label>
+          <input type="radio" name="plan" />
+          <div class="box-content">
+            <div>
+              <strong>3 Unit</strong><br />
+              <span class="badge">30% Off</span>
+            </div>
+            <div>
+              <div class="price">
+                $24.00 USD <del><br />$24.00 USD</del>
+              </div>
+            </div>
+          </div>
+        </label>
+        <div class="dropdowns">
+          <div class="dropdown-header">
+            <span></span>
+            <span>Size</span>
+            <span>Colour</span>
+          </div>
+          <div class="dropdown-row">
+            <span class="index">#1</span>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+          <div class="dropdown-row">
+            <span class="index">#2</span>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Colour</option>
+              <option>Black</option>
+              <option>Red</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="total">
+        <span>Free Delivery</span>
+        <span>Total : $18.00 USD</span>
+      </div>
+
+      <button class="button">+ Add to Cart</button>
+      <div class="footer">@ Powered by Pumper</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
